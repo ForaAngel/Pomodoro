@@ -1,0 +1,60 @@
+body {
+    background-color: purple;
+    font-family: Arial, sans-serif;
+    
+}
+#app {
+    background-color: white;
+    width: 500px;
+    margin: 0 auto;
+    border: solid 1px black;
+    padding: 20px;
+}
+#time {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#time #value {
+    font-size: 48px;
+    font-weight: bold;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+ input[type="text"] {
+    padding: 10px;
+    border: solid 1px black;
+    width: 300px;
+}
+
+button, input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#tasks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.task{
+    display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.task .completed{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.done {
+    text-decoration: line-through;
+    color: grey;
+}
