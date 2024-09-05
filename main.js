@@ -63,7 +63,7 @@ function renderTasks() {
 }
 
 function startButtonHandler(id) {
-  time = 5; // Establecer el tiempo a 25 minutos (aquí es 5 para prueba)
+  time = 25 * 60; // Establecer el tiempo a 25 minutos (aquí es 5 para prueba)
   current = id; // Guardar el ID de la tarea actual
   const taskIndex = tasks.findIndex((task) => task.id === id);
 
@@ -88,7 +88,7 @@ function timeHandler(id) {
 }
 
 function startBreak() {
-  time = 3; // Establecer el tiempo de descanso (aquí es 3 para prueba)
+  time = 5 * 60; // Establecer el tiempo de descanso (aquí es 3 para prueba)
   taskName.textContent = "Break Time"; // Mostrar el nombre de la tarea
   renderTime();
   timerBreak = setInterval(() => {
